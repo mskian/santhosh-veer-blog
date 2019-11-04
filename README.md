@@ -15,6 +15,7 @@ A Simple and Responsive Ghost Blog theme.
 - Social Profile Icons
 - user login and Registration form
 - Membership Account Page
+- Cookie Notice - <https://wpspeedmatters.com/fastest-cookie-consent-wordpress-plugin/>
 - Paid Membership (Soon)
 - Many More Features Soon...
 
