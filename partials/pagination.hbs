@@ -1,0 +1,14 @@
+{{!< default}}
+<div class="level" role="navigation" aria-label="pagination">
+{{#if prev}}
+<p class="level-item has-text-centered">
+<a class="button is-info is-rounded" href="{{page_url prev}}">Previous</a>
+</p>
+{{/if}}
+<p class="level-item has-text-centered">Page {{page}} of {{pages}}</p>
+{{#if next}}
+<p class="level-item has-text-centered">
+<a class="button is-info is-rounded" href="{{page_url next}}">Next</a>
+</p>
+{{/if}}
+</div>

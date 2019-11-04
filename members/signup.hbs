@@ -1,0 +1,34 @@
+{{!< ../default}}
+
+{{#if @member}}
+
+<script>window.location = '{{@site.url}}';</script>
+
+{{else}}
+
+{{!-- Not logged in: Sign up --}}
+<section class="hero">
+<div class="hero-body">
+<div class="container app">
+<div class="column is-half is-offset-one-quarter">
+<div class="control has-addons">
+<form id="sigupData" data-members-form="signup">
+<h1 class="title has-textcenter has-text-centered">Hi...!</h1>
+<p class="subtitle has-text-centered">Sign up and Access the Full post on My Blog</p>
+<p class="control">
+<input class="input is-info column is-half" data-members-email name="email" id="email" type="text" placeholder="Your email address" autocomplete="false" />
+</p>
+<button id="pushdata" type="submit" class="button is-info sign-button">📝 Register</button>
+</div>
+<br>
+<p class="has-text-centered"><small>Already Having an Account? <a href="{{@site.url}}/signin/">Log in</a></small></p>
+<br>
+<div id="registernotice"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{{/if}}

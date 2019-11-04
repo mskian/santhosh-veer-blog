@@ -1,0 +1,58 @@
+{{!< default}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-two-thirds">
+<article class="{{post_class}} post-access-{{visibility}}">
+<h1 class="title has-text-weight-bold has-text-centered">{{title}}</h1>
+<div class="has-text-centered">
+{{#primary_author}}<span class="post-author">Posted by <a href="{{url}}" rel="author">{{name}}</a></span>{{/primary_author}}
+{{#primary_tag}}<span class="post-tags"> in <a href="{{url}}">{{name}}</a></span>{{/primary_tag}} <time class="post-date" datetime="{{date updated_at format='YYYY-MM-DD'}}"><i class="far fa-calendar-alt"></i> {{date updated_at format="DD MMMM YYYY"}}</time>
+</div>
+<hr>
+{{#if access}}
+<section class="post-content">
+{{content}}
+</section>
+{{else}}
+<section class="post-content">
+<div class="container content app">
+<div class="control has-addons">
+<div class="notification is-warning">
+<p>You don't have access to this post on <strong>{{@site.title}}</strong> at the moment, but if you upgrade your account<b>(It's Free)</b> you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.</p>
+<p class="buttons is-centered">
+<a class="button join-more is-success is-rounded sign-button" href="{{@site.url}}/signup/">Register</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+{{/if}}
+<hr>
+<p class="has-text-centered is-small">
+<a rel="nofollow noreferrer noopener" target="_blank" href="https://api.whatsapp.com/send?text={{encode title}}%20%C2%BB%20Read%20More%20{{url absolute="true"}}" class="button is-success is-rounded"><i class="fab fa-whatsapp"></i></a>
+<a rel="nofollow noreferrer noopener" target="_blank" href="https://telegram.me/share/url?url={{url absolute="true"}}&text={{encode title}}" class="button is-link is-rounded"><i class="fab fa-telegram-plane"></i></a>
+<a rel="nofollow noreferrer noopener" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="button is-primary is-rounded"><i class="fab fa-facebook-f"></i></a>
+<a rel="nofollow noreferrer noopener" target="_blank" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" class="button is-info is-rounded"><i class="fab fa-twitter"></i></a>
+</p>
+<hr>
+<div class="post-nav has-text-centered">
+{{#next_post}}
+<p>What's Next? - <a href="{{url}}" title="{{title}}">{{title}}</a></p>
+{{else}}
+<p>Oops No more New posts Goto &rarr; <a href="{{@site.url}}">Homepage</a></p>
+{{/next_post}}
+</div>
+<hr>
+</article>
+
+</div>
+</div>
+</div>
+</section>
+
+{{/post}}

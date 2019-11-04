@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, minimal-ui">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="San Blog">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <meta name="apple-mobile-web-app-title" content="San Blog">
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bulma.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/style.css"}}" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="48x48" href="{{asset "icons/Icon-48.png"}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset "icons/Icon-72.png"}}">
+    <link rel="apple-touch-icon" sizes="96x96" href="{{asset "icons/Icon-96.png"}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{asset "icons/Icon-144.png"}}">
+    <link rel="apple-touch-icon" sizes="192x192" href="{{asset "icons/Icon-192.png"}}">
+    <link rel="apple-touch-icon" sizes="256x256" href="{{asset "icons/Icon-256.png"}}">
+    <link rel="apple-touch-icon" sizes="512x512" href="{{asset "icons/Icon-512.png"}}">
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}">
+
+{{!-- The blog navigation links --}}
+{{navigation}}
+
+{{!-- content --}}
+<main id="content">
+{{{body}}}
+</main>
+
+{{!-- footer --}}
+<footer class="footer">
+<div class="content has-text-centered">
+<p>
+<a href="https://santhoshveer.com/privacy-policy/">Privacy Policy</a> |
+<a href="https://santhoshveer.com/cookie-policy/">Cookie Policy</a>
+</P>
+<p class="content has-text-centered">
+<strong>🔮 Crafted</strong> by <a href="https://www.facebook.com/sandyarmy" target="_blank" rel="nofollow noopener">Santhosh Veer</a> - Site Build using Ghost CMS - Hosted on DigitalOcean.
+</p>
+<p><i class="far fa-copyright"></i> {{date format="YYYY"}} santhoshveer.com</p>
+<P>
+<a href="https://feedly.com/i/subscription/feed/https://santhoshveer.com/rss/" class="rssicon" title="RSS Feed" target="_blank" rel="nofollow noopener"><i class="fas fa-rss-square"></i></a>
+<a href="https://twitter.com/santhoshveerece" class="twittericon" title="Follow us on Twitter" target="_blank" rel="nofollow noopener"><i class="fab fa-twitter"></i></a>
+<a href="https://www.facebook.com/santhoshveerblog" class="fbicon" title="Follow us on Facebook" target="_blank" rel="nofollow noopener"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/santhoshveerece/" class="instagram" title="Tamil SMS on Instagram" target="_blank" rel="nofollow noopener"><i class="fab fa-instagram"></i></a>
+</P>
+</div>
+</footer>
+
+{{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="{{asset "js/custom.js"}}"></script>
+
+<script src="{{asset "js/register.js"}}"></script>
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+var action = getParameterByName('action');
+$(document).ready(function() {
+    if (action == 'signup') {
+        window.location = '{{@site.url}}/account/';
+    }
+    if (action == 'signin') {
+        window.location = '{{@site.url}}/account/';
+    }
+});
+</script>
+
+    {{!-- Ghost outputs important scripts and data with this tag --}}
+    {{ghost_foot}}
+
+</body>
+</html>

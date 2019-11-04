@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>{{meta_title}}</title>
+
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, minimal-ui">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="{{asset "css/bulma.min.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "built/style.css"}}" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body class="{{body_class}}">
+
+{{navigation}}
+
+<main id="content">
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-half">
+<article class="{{post_class}}">
+<h1 class="title has-text-weight-bold has-text-centered">{{statusCode}}</h1>
+<h2 class="subtitle has-text-centered bio-author">
+{{message}}
+</h2>
+<div class="buttons is-centered">
+<a class="button is-danger is-rounded" href="{{@site.url}}">Go to the Home Page →</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+{{!-- footer --}}
+<footer class="footer">
+<div class="content has-text-centered">
+<p>
+<a href="https://santhoshveer.com/privacy-policy/">Privacy Policy</a> |
+<a href="https://santhoshveer.com/cookie-policy/">Cookie Policy</a>
+</P>
+<p class="content has-text-centered">
+<strong>🔮 Crafted</strong> by <a href="https://www.facebook.com/sandyarmy" target="_blank" rel="nofollow noopener">Santhosh Veer</a> - Site Build using Ghost CMS - Hosted on DigitalOcean.
+</p>
+<p><i class="far fa-copyright"></i> {{date format="YYYY"}} santhoshveer.com</p>
+<P>
+<a href="https://feedly.com/i/subscription/feed/https://santhoshveer.com/rss/" class="rssicon" title="RSS Feed" target="_blank" rel="nofollow noopener"><i class="fas fa-rss-square"></i></a>
+<a href="https://twitter.com/santhoshveerece" class="twittericon" title="Follow us on Twitter" target="_blank" rel="nofollow noopener"><i class="fab fa-twitter"></i></a>
+<a href="https://www.facebook.com/santhoshveerblog" class="fbicon" title="Follow us on Facebook" target="_blank" rel="nofollow noopener"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/santhoshveerece/" class="instagram" title="Tamil SMS on Instagram" target="_blank" rel="nofollow noopener"><i class="fab fa-instagram"></i></a>
+</P>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
+
+</body>
+</html>

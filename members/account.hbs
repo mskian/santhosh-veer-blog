@@ -1,0 +1,29 @@
+{{!< ../default}}
+
+{{#if @member}}
+
+{{!-- Logged in, not paying: Link to checkout --}}
+<section class="hero">
+<div class="hero-body">
+<div class="container content app">
+<div class="column is-half is-offset-one-quarter">
+<div class="control has-addons">
+<h2 class="title">Welcome Back 😊</h2>
+
+<p>Hey there 😍
+<strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}</p>
+<p>you can Now Access our all Membership Only post and File Downloads.</p>
+<div class="buttons is-centered">
+<a class="button is-info is-rounded" href="{{@site.url}}">Go to the Home Page →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+{{else}}
+
+{{!-- Not logged in: Redirect to signin --}}
+<script>window.location = '{{@site.url}}/signin/';</script>
+
+{{/if}}

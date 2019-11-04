@@ -1,0 +1,29 @@
+<!-- Navigation -->
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+{{#if @site.logo}}
+<a class="navbar-item" href="/"><img src="{{@site.logo}}" alt="{{@site.title}}"/></a>
+{{/if}}
+<a role="button" class="navbar-burger burger" aria-label="menu" data-target="navMenu">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div id="navMenu" class="navbar-menu">
+<div class="navbar-end">
+{{#foreach navigation}}
+<a class="navbar-item" href="{{url absolute="true"}}">{{label}}</a>
+{{/foreach}}
+
+{{#if @member}}
+<a class="navbar-item" href="{{@site.url}}/account/"><i class="fas fa-cog"></i> &nbsp; Account</a>
+<a class="navbar-item" href="#signout" data-members-signout><i class="fas fa-sign-out-alt"></i> &nbsp; Log out</a>
+{{else}}
+<a class="navbar-item" href="{{@site.url}}/signin/"><i class="fas fa-sign-in-alt"></i> &nbsp; Log in</a>
+<a class="navbar-item" href="{{@site.url}}/signup/"><i class="fas fa-user-plus"></i> &nbsp; Signup</a>
+{{/if}}
+
+</div>
+</div>
+</nav>

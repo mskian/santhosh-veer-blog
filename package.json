@@ -1,0 +1,54 @@
+{
+	"name": "santhoshveer",
+	"description": "Light weight and Responsive Ghost theme.",
+	"demo": "https://santhoshveer.com",
+	"version": "0.0.1",
+	"engines": {
+		"ghost-api": "v3",
+		"ghost": ">=3.0.0"
+	},
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp build",
+		"zip": "gulp zip",
+		"test": "gscan ."
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Santhosh Veer",
+		"email": "me@santhoshveer.com",
+		"url": "https://santhoshveer.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/santhosh-veer-blog/santhosh-veer-blog.git"
+	},
+	"bugs": "https://github.com/mskian/santhosh-veer-blog/issues",
+	"keywords": [
+		"bulma",
+		"responsive",
+		"ghost-theme"
+	],
+	"config": {
+		"posts_per_page": 5
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.7.1",
+		"beeper": "^2.0.0",
+		"cssnano": "^4.1.10",
+		"gscan": "^3.1.1",
+		"gulp": "^4.0.2",
+		"gulp-livereload": "^4.0.2",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-watch": "^5.0.1",
+		"gulp-zip": "^5.0.1",
+		"postcss-color-function": "^4.1.0",
+		"postcss-custom-properties": "^9.0.2",
+		"postcss-easy-import": "^3.0.0",
+		"pump": "^3.0.0"
+	},
+	"browserslist": [
+        "defaults"
+    ]
+}

@@ -1,0 +1,46 @@
+{{!< default}}
+
+<section class="section">
+<div class="container">
+
+{{#author}}
+<h1 class="title is-3 has-text-centered">Posts by: {{name}}</h1>
+{{#if bio}}<p class="subtitle is-5 has-text-centered bio-author">{{bio}}</p>{{/if}}
+{{/author}}
+
+<div class="columns is-centered">
+<div class="column is-three-fifths">
+{{#foreach posts visibility="all"}}
+<div class="card">
+<article class="{{post_class}}">
+{{#if feature_image}}
+<div class="card-image">
+<figure class="image">
+<img src="{{img_url feature_image}}" alt="{{title}}">
+</figure>
+</div>
+{{/if}}
+<div class="card-content">
+<div class="content">
+<h2 class="is-title has-text-centered home-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+<p class="subtitle has-text-centered post-date">
+Posted on <time datetime="{{date updated_at format='YYYY-MM-DD'}}">{{date updated_at format="DD MMMM YYYY"}}</time>&nbsp; by
+{{#primary_author}}<span class="post-author has-text-centered"><a href="{{url}}" rel="author">{{name}}</a></span>{{/primary_author}}
+</p>
+<div class="buttons is-centered">
+<a href="{{url}}" class="button is-rounded is-warning read-more">
+மேலும் படிக்க
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+{{/foreach}}
+<p>
+{{pagination}}
+</p>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,48 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+<section class="section">
+<div class="container">
+<h1 class="title is-4 has-text-centered">
+Santhosh Veer 💌
+</h1>
+<hr>
+<h2 class="subtitle is-6 has-text-centered bio-author">
+Blogger | Web Developer | Open Source Lover
+</h2>
+<div class="columns is-centered">
+<div class="column is-three-fifths">
+{{#foreach posts visibility="all"}}
+<div class="card">
+<article class="{{post_class}}">
+{{#if feature_image}}
+<div class="card-image">
+<figure class="image">
+<img src="{{img_url feature_image}}" alt="{{title}}">
+</figure>
+</div>
+{{/if}}
+<div class="card-content">
+<div class="content">
+<h2 class="is-title has-text-centered home-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+<p class="subtitle has-text-centered post-date">
+Posted on <time datetime="{{date updated_at format='YYYY-MM-DD'}}">{{date updated_at format="DD MMMM YYYY"}}</time>&nbsp; by
+{{#primary_author}}<span class="post-author has-text-centered"><a href="{{url}}" rel="author">{{name}}</a></span>{{/primary_author}}
+</p>
+<div class="buttons is-centered">
+<a href="{{url}}" class="button is-rounded is-warning read-more">
+Read More
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+{{/foreach}}
+<p>
+{{pagination}}
+</p>
+</div>
+</div>
+</div>
+</section>

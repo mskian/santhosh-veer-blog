@@ -1,0 +1,35 @@
+{{!< ../default}}
+
+{{#if @member}}
+
+{{!-- Logged in: Redirect home --}}
+<script>window.location = '{{@site.url}}';</script>
+
+{{else}}
+
+{{!-- Not logged in: Signin form --}}
+<section class="hero">
+<div class="hero-body">
+<div class="container app">
+<div class="column is-half is-offset-one-quarter">
+<div class="control has-addons">
+<form id="signData" data-members-form="signin">
+<h1 class="title has-textcenter has-text-centered">Welcome back!</h1>
+<p class="subtitle has-text-centered">Sign into your account again for full access</p>
+<p class="control">
+<input class="input is-info column is-half" data-members-email name="email" id="email" type="text" placeholder="Your email address" autocomplete="false" />
+</p>
+<button id="push" type="submit" class="button is-info sign-button">✉ Send Login Link</button>
+</div>
+<br>
+<p class="has-text-centered"><small>Don't have an account yet? <a href="{{@site.url}}/signup/">Sign up</a></small></p>
+<br>
+<div id="notice"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{{/if}}
