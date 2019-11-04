@@ -20,6 +20,12 @@ A Simple and Responsive Ghost Blog theme.
 
 ## Development 🛠
 
+- Download or install via git on your Ghost theme Directory `/content/themes/`
+
+```bash
+git clone https://github.com/mskian/santhosh-veer-blog.git
+```
+
 - Install Modules via `yarn`
 
 ```bash
