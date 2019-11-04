@@ -1,22 +1,24 @@
-# Santhosh Veer Blog
+# Santhosh Veer Blog 😉
 
-Ghost theme with Membership Feature
+A Simple and Responsive Ghost Blog theme.
 
-Ghost theme for My Personal Blog - Automatically deploy to Ghost Admin Dasboard
+- Ghost v3 - <https://ghost.org/3/>
+- Ghost theme with Membership Feature - <https://ghost.org/members/>
+- Ghost theme for My Personal Blog - Automatically deploy to Ghost Admin Dasboard
 
-## Features
+## Features 📑
 
 - Responsive (Build using Bulma CSS Framework)
-- Ghost Membership
+- Ghost Membership - <https://ghost.org/docs/members/introduction/>
 - Minimal and Simple Look
 - Social Share Buttons
 - Social Profile Icons
 - user login and Registration form
-- Membership Dashboard
+- Membership Account Page
 - Paid Membership (Soon)
-- Many More Features Coming Soon...
+- Many More Features Soon...
 
-## Development
+## Development 🛠
 
 - Install Modules via `yarn`
 
@@ -24,7 +26,7 @@ Ghost theme for My Personal Blog - Automatically deploy to Ghost Admin Dasboard
 yarn
 ```
 
-- Workflow
+- Workflow ⚙
 
 ```bash
 ## Development (Run build & watch for changes)
@@ -46,7 +48,7 @@ yarn test
 yarn zip
 ```
 
-- Enable Members Pages - Upload the routes file on Lab Section
+- Enable Members Pages - Login to your Ghost Admin Dashboard and Upload this routes file on Lab Section
 
 `routes.yaml`
 
@@ -66,6 +68,6 @@ taxonomies:
   author: /author/{slug}/
 ```
 
-## LICENSE
+## LICENSE 📜
 
 MIT
