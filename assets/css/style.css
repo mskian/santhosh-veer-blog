@@ -178,6 +178,45 @@ p {
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
 }
+
+.user-form p {
+    letter-spacing: .03em;
+    line-height: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.user-form button {
+    display: flex;
+    flex-grow: 0.3;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 32px;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.user-form input {
+    display: flex;
+    flex-grow: 0.3;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 32px;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
 code {
     padding: 0 5px 2px;
     font-size: 0.8em;
@@ -224,7 +263,6 @@ pre code {
 }
 .level-item {
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 700;
 }
 input,

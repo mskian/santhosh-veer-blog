@@ -9,7 +9,7 @@
 {{!-- Not logged in: Sign up --}}
 <section class="hero">
 <div class="hero-body">
-<div class="container app">
+<div class="container app user-form">
 <div class="column is-half is-offset-one-quarter">
 <div class="control has-addons">
 <form id="sigupData" data-members-form="signup">
@@ -18,12 +18,12 @@
 <p class="control">
 <input class="input is-info column is-half" data-members-email name="email" id="email" type="text" placeholder="Your email address" autocomplete="false" />
 </p>
-<button id="pushdata" type="submit" class="button is-info sign-button">📝 Register</button>
+<button id="pushdata" type="submit" class="button is-link sign-button">📝 Register</button>
 </div>
 <br>
 <p class="has-text-centered"><small>Already Having an Account? <a href="{{@site.url}}/signin/">Log in</a></small></p>
 <br>
-<div id="registernotice"></div>
+<div class="has-text-centered" id="registernotice"></div>
 </form>
 </div>
 </div>
