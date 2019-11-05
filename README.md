@@ -8,6 +8,8 @@ A Simple and Responsive Ghost Blog theme.
 
 ## Features 📑
 
+> ⚠ Post Editor Feature - CSS Styling only Written for Markdown Editor Me Personally Love Markdown Editor.CSS are not Properly written for `Koenig` Editor me Just add Example CSS Codes - <https://github.com/mskian/santhosh-veer-blog/blob/401b97e84d1d6260118683c65ff6646cbe65de5c/assets/css/style.css#L379>  
+
 - Responsive (Build using Bulma CSS Framework)
 - Ghost Membership - <https://ghost.org/docs/members/introduction/>
 - Minimal and Simple Look
