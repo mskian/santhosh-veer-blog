@@ -24,7 +24,10 @@
 	overflow-x: hidden;
   }
   a {
-      color: rgb(232, 75, 13);
+      color: rgb(73, 53, 253);
+  }
+  a:hover {
+    color: #0f00df;
   }
   .navbar{
     background-color: #ffd900;
@@ -51,10 +54,9 @@
       padding-right: 1em;
     }
   .bio-author {
+    line-height:30px;
     font-size: 14px;
-    text-transform: uppercase;
     color: #292929;
-    font-weight: bold;
   }
   .home-title a {
      color: #292929;
@@ -83,6 +85,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 32px;
     padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
   }
   .join-more {
     font-weight: 600;
@@ -91,38 +97,59 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 32px;
     padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
   }
   .post-date {
     font-size: 12px;
     text-transform: uppercase;
     color: #000;
     font-weight: bold;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
 }
 .post-author {
     font-size: 12px;
     text-transform: uppercase;
     color: #000;
     font-weight: bold;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
 }
 .post-tags {
     font-size: 12px;
     text-transform: uppercase;
     color: #000;
     font-weight: bold;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
 }
 .post-content {
-    line-height: 26px;
-    margin-bottom: 25px;
+    letter-spacing: .03em;
     word-wrap: break-word;
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
 }
 .content h1 {
     font-size:21px;
+    font-weight: bold;
 }
 .content h2 {
     font-size:20px;
+    font-weight: bold;
 }
 .content h3 {
     font-size:20px;
@@ -141,14 +168,62 @@
     margin: 0 auto;
 }
 p {
-    line-height: 26px;
-    margin-bottom: 25px;
+    letter-spacing: .03em;
     word-wrap: break-word;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color: #221f1f;
-  }
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+code {
+    padding: 0 5px 2px;
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 400!important;
+    border-radius: 3px;
+    color: rgb(41, 38, 38);
+    background: rgb(243, 179, 42);
+}
+code {
+    word-break: break-all;
+}
+pre {
+    overflow-x: auto;
+    margin: 1.5em 0 3em;
+    padding: 20px;
+    max-width: 100%;
+    font-size:14px;
+    border: #15171A 1px solid;
+    color: #e5eff5;
+    line-height: 1.5em;
+    background: #15171A;
+    border-radius: 5px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+}
+pre code {
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+.site-bio {
+    letter-spacing: .03em;
+    word-wrap: break-word;
+    color: #6200ff;
+    border-bottom: 0.125em solid rgb(223, 152, 0);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+}
 .level-item {
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
 }
