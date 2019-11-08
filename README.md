@@ -1,5 +1,7 @@
 # Santhosh Veer Blog 😉
 
+[![devDependencies Status](https://david-dm.org/mskian/santhosh-veer-blog/dev-status.png)](https://david-dm.org/mskian/santhosh-veer-blog?type=dev) [![Github Workflow](https://github.com/mskian/santhosh-veer-blog/workflows/Test/badge.svg)](https://github.com/mskian/santhosh-veer-blog/actions)  
+
 A Simple and Responsive Ghost Blog theme.
 
 - Ghost v3 - <https://ghost.org/3/>
