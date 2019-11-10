@@ -31,7 +31,7 @@ const handleError = (done) => {
 
 function hbs(done) {
     pump([
-        src(['*.hbs', 'partials/**/*.hbs']),
+        src(['*.hbs', 'partials/**/*.hbs', 'members/**/*.hbs']),
         livereload()
     ], handleError(done));
 }
@@ -70,7 +70,7 @@ function zipper(done) {
 }
 
 const cssWatcher = () => watch('assets/css/style.css', css);
-const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
+const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs', 'members/**/*.hbs'], hbs);
 const watcher = parallel(cssWatcher, hbsWatcher);
 const build = series(css);
 const dev = series(build, serve, watcher);

@@ -3,6 +3,17 @@ if (el) {
     el.addEventListener('submit', signData);
 }
 
+function UserAgreement() {
+    if (document.querySelector('#check').checked) {
+
+        document.querySelector("#push").disabled = false;
+        console.log('Not Accepted');
+    } else {
+        document.querySelector("#push").disabled = true;
+        console.log('Accepted');
+    }
+}
+
 function signData(event) {
     event.preventDefault();
     let email = document.querySelector('#email').value;
@@ -31,6 +42,17 @@ function signData(event) {
 var el = document.querySelector('#sigupData');
 if (el) {
     el.addEventListener('submit', sigupData);
+}
+
+function RegisterAgreement() {
+    if (document.querySelector('#check').checked) {
+
+        document.querySelector("#pushdata").disabled = false;
+        console.log('Not Accepted');
+    } else {
+        document.querySelector("#pushdata").disabled = true;
+        console.log('Accepted');
+    }
 }
 
 function sigupData(event) {
