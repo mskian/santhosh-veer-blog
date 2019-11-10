@@ -7,10 +7,10 @@ function UserAgreement() {
     if (document.querySelector('#check').checked) {
 
         document.querySelector("#push").disabled = false;
-        console.log('Not Accepted');
+        console.log('Accepted');
     } else {
         document.querySelector("#push").disabled = true;
-        console.log('Accepted');
+        console.log('Not Accepted');
     }
 }
 
@@ -48,10 +48,10 @@ function RegisterAgreement() {
     if (document.querySelector('#check').checked) {
 
         document.querySelector("#pushdata").disabled = false;
-        console.log('Not Accepted');
+        console.log('Accepted');
     } else {
         document.querySelector("#pushdata").disabled = true;
-        console.log('Accepted');
+        console.log('Not Accepted');
     }
 }
 
