@@ -29,17 +29,17 @@
 <input class="input is-info column is-half input-box" data-members-email name="email" id="email" type="text" placeholder="Your email address" autocomplete="false" />
 </p>
 </div>
-<div class="subtitle has-text-weight-bold has-text-centered">
+<div class="subtitle has-text-centered">
 <label class="checkbox">
 <input id="check" name="check" type="checkbox" style="display:inline;" onchange="RegisterAgreement()">
 </label>
-<p class="is-size-6" style="margin:1px; display:inline;">
+<p class="has-text-danger has-text-weight-bold" style="font-size:14px; margin:2px; vertical-align:middle; display:inline;">
 Yes, I Accept this website Privacy and Cookie Policy to Continue My Registration
 </p>
 </div>
 <button id="pushdata" type="submit" class="button is-link sign-button" disabled>📝 Register</button>
 <br>
-<p class="has-text-centered"><small>Already Having an Account? <a href="{{@site.url}}/signin/">Log in</a></small></p>
+<p class="has-text-weight-bold has-text-centered"><small>Already Having an Account &rarr; <a href="{{@site.url}}/signin/">Log in</a></small></p>
 <br>
 <div class="has-text-centered" id="registernotice"></div>
 </form>

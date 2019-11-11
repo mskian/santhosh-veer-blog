@@ -178,7 +178,17 @@ p {
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
 }
-
+blockquote {
+    letter-spacing: .03em;
+    font-family: 'Nunito', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+  }
+  .user-form {
+    font-family: 'Nunito', sans-serif;
+  }
 .user-form p {
     letter-spacing: .03em;
     line-height: 20px;
@@ -195,6 +205,7 @@ p {
 .user-form button {
     display: flex;
     flex-grow: 0.3;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
@@ -208,6 +219,7 @@ p {
 .user-form input {
     display: flex;
     flex-grow: 0.3;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 14px;
     border-radius: 32px;
@@ -279,6 +291,9 @@ textarea,
 .sign-button {
 	width: 45rem !important;
 	min-height: 3rem;
+}
+input[type=checkbox] {
+    vertical-align:middle;
 }
   /* Social icons */
   .widgetheading h1 {
