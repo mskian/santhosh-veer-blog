@@ -19,10 +19,13 @@
     <meta name="apple-mobile-web-app-title" content="San Blog">
 
     {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/bulma.min.css"}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset "built/style.css"}}" />
+    <link rel="preload" href="{{asset "css/bulma.min.css"}}" as="style">
+    <link rel="preload" href="{{asset "built/style.css"}}" as="style">
+    <link rel="stylesheet" href="{{asset "css/bulma.min.css"}}" />
+    <link rel="stylesheet" href="{{asset "built/style.css"}}" />
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 
     <link rel="apple-touch-icon" sizes="48x48" href="{{asset "icons/Icon-48.png"}}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{asset "icons/Icon-72.png"}}">
@@ -94,6 +97,18 @@ $(document).ready(function() {
 </script>
 
 {{> "notice"}}
+
+<script src="{{asset "js/flying-pages.min.js"}}" defer></script>
+<script>
+  window.addEventListener("load", () => {
+    flyingPages({
+      delay: 0,
+      ignoreKeywords: ["\/ghost","\/ghost\/#","\/p\/","\/signup\/","\/signin\/","\/account\/","#signout","\/public\/members.js","?action=signin","?action=signup","#",".png",".jpeg",".jpg",".gif",".svg"],
+      maxRPS: 3,
+      hoverDelay: 50
+    });
+  });
+</script>
 
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
