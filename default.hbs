@@ -97,14 +97,12 @@ $(document).ready(function() {
 
 <script src="{{asset "js/flying-pages.min.js"}}" defer></script>
 <script>
-  window.addEventListener("load", () => {
-    flyingPages({
-      delay: 0,
-      ignoreKeywords: ["\/ghost","\/ghost\/#","\/p\/","\/signup\/","\/signin\/","\/account\/","#signout","\/public\/members.js","?action=signin","?action=signup","#",".png",".jpeg",".jpg",".gif",".svg"],
-      maxRPS: 3,
-      hoverDelay: 50
-    });
-  });
+window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: ["\/ghost", "\/ghost\/#", "\/p\/", "\/signup\/", "\/signin\/", "\/account\/", "#signout", "\/public\/members.js", "?action=signin", "?action=signup", "#", ".png", ".jpeg", ".jpg", ".gif", ".svg"],
+    maxRPS: 3,
+    hoverDelay: 50
+};
 </script>
 
     {{!-- Ghost outputs important scripts and data with this tag --}}
