@@ -1,11 +1,13 @@
-require('dotenv').config()
+require('dotenv').config();
 const GhostAdminApi = require('@tryghost/admin-api');
 
 (async function main() {
   try {
+    const url = process.env.GHOST_ADMIN_API_URL;
+    const seckey = process.env.GHOST_ADMIN_API_KEY;
     const api = new GhostAdminApi({
-      url: process.env.GHOST_ADMIN_API_URL,
-      key: process.env.GHOST_ADMIN_API_KEY,
+      url,
+      key: seckey,
       version: 'v3'
     });
 

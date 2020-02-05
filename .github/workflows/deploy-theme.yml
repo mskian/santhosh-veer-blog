@@ -25,7 +25,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm install yarn -g
       - run: yarn
-      - name: Build and Test theme
+      - name: Test and Build theme
         run: yarn test && yarn zip
       - name: Setup Deploy
         working-directory: ./deploy
