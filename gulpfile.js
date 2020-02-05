@@ -54,7 +54,7 @@ function css(done) {
 }
 
 function zipper(done) {
-    const targetDir = 'deploy/';
+    const targetDir = 'dist/';
     const themeName = require('./package.json').name;
     const filename = themeName + '.zip';
 

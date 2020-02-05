@@ -9,7 +9,7 @@ const GhostAdminApi = require('@tryghost/admin-api');
       version: 'v3'
     });
 
-    await api.themes.upload({file: 'santhoshveer.zip'});
+    await api.themes.upload({file: '../dist/santhoshveer.zip'});
     console.log('Theme successfully uploaded.');
   } catch (err) {
     console.error(err);

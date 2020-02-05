@@ -12,7 +12,8 @@
 		"build": "gulp build",
 		"zip": "gulp zip",
 		"test": "gscan .",
-		"test:ci": "gscan --fatal --verbose ."
+		"test:ci": "gscan --fatal --verbose .",
+		"live": "node dist/index.js"
 	},
 	"license": "MIT",
 	"author": {
