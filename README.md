@@ -1,6 +1,6 @@
 # Santhosh Veer Blog 😉
 
-[![devDependencies Status](https://david-dm.org/mskian/santhosh-veer-blog/dev-status.png)](https://david-dm.org/mskian/santhosh-veer-blog?type=dev) [![Github Workflow](https://github.com/mskian/santhosh-veer-blog/workflows/Test/badge.svg)](https://github.com/mskian/santhosh-veer-blog/actions)  
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m777825813-ba00128268f41a778c9cda9a) [![devDependencies Status](https://david-dm.org/mskian/santhosh-veer-blog/dev-status.png)](https://david-dm.org/mskian/santhosh-veer-blog?type=dev) [![Github Workflow](https://github.com/mskian/santhosh-veer-blog/workflows/Test/badge.svg)](https://github.com/mskian/santhosh-veer-blog/actions) ![Deploy Theme](https://github.com/mskian/santhosh-veer-blog/workflows/Deploy%20Theme/badge.svg)  
 
 A Simple and Responsive Ghost Blog theme.
 

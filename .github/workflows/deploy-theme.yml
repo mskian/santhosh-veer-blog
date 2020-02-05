@@ -33,5 +33,5 @@ jobs:
       - name: 'Deploy Ghost Theme'
         run: node deploy/index.js
         env:
-          api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
-          api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          url: ${{ secrets.GHOST_ADMIN_API_URL }}
+          key: ${{ secrets.GHOST_ADMIN_API_KEY }}

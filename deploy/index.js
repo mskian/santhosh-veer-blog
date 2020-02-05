@@ -3,11 +3,9 @@ const GhostAdminApi = require('@tryghost/admin-api');
 
 (async function main() {
   try {
-    const url = process.env.GHOST_ADMIN_API_URL;
-    const seckey = process.env.GHOST_ADMIN_API_KEY;
     const api = new GhostAdminApi({
-      url,
-      key: seckey,
+      url: process.env.url,
+      key: process.env.key,
       version: 'v3'
     });
 
