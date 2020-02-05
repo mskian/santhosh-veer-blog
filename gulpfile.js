@@ -64,6 +64,8 @@ function zipper(done) {
             '!node_modules', '!node_modules/**',
             '!dist', '!dist/**',
             '!deploy/node_modules', '!deploy/node_modules/**',
+            '!deploy/.env', '!deploy/.env',
+            '!deploy/.env.example', '!deploy/.env.example',
         ]),
         zip(filename),
         dest(targetDir)
