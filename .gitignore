@@ -21,6 +21,7 @@ package-lock.json
 *.iml
 projectFilesBackup
 deploy/.env
+deploy/node_modules
 
 .DS_Store
 
