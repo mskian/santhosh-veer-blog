@@ -1,15 +1,14 @@
-require('dotenv').config()
 const GhostAdminApi = require('@tryghost/admin-api');
+require('dotenv').config()
 
 (async function main() {
   try {
     const api = new GhostAdminApi({
       url: process.env.GHOST_ADMIN_API_URL,
       key: process.env.GHOST_ADMIN_API_KEY,
-      version: 'canary'
+      version: 'v3'
     });
 
-    // Deploy it to the configured site
     await api.themes.upload({file: '../dist/santhoshveer.zip'});
     console.log('Theme successfully uploaded.');
   } catch (err) {

@@ -19,7 +19,7 @@ jobs:
             ${{ runner.OS }}-build-${{ env.cache-name }}-
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
-      - name: Setup node
+      - name: Setup node and Yarn
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
@@ -34,5 +34,5 @@ jobs:
         working-directory: ./deploy
         run: node index.js
         env:
-          api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
-          api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          url: ${{ secrets.GHOST_ADMIN_API_URL }}
+          key: ${{ secrets.GHOST_ADMIN_API_KEY }}
