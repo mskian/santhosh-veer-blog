@@ -2,7 +2,7 @@
 	"name": "santhoshveer",
 	"description": "Light weight and Responsive Ghost theme.",
 	"demo": "https://santhoshveer.com",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"ghost-api": "v3",
 		"ghost": ">=3.0.0"
@@ -12,8 +12,7 @@
 		"build": "gulp build",
 		"zip": "gulp zip",
 		"test": "gscan .",
-		"test:ci": "gscan --fatal --verbose .",
-		"live": "node dist/index.js"
+		"test:ci": "gscan --fatal --verbose ."
 	},
 	"license": "MIT",
 	"author": {
