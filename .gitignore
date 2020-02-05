@@ -22,6 +22,7 @@ package-lock.json
 projectFilesBackup
 deploy/.env
 deploy/node_modules
+deploy/santhoshveer.zip
 
 .DS_Store
 
