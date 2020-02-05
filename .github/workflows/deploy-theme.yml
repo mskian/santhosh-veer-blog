@@ -34,5 +34,5 @@ jobs:
         working-directory: ./deploy
         run: node index.js
         env:
-          url: ${{ secrets.GHOST_ADMIN_API_URL }}
-          key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
+          api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
