@@ -20,6 +20,7 @@ package-lock.json
 .idea/*
 *.iml
 projectFilesBackup
+deploy/.env
 
 .DS_Store
 

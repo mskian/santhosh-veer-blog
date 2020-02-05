@@ -10,6 +10,9 @@
 		"enabled": true,
 		"automerge": false
 	},
+	"ignorePaths": [
+		"deploy"
+	],
 	"packageRules": [{
 			"packagePatterns": [
 				"postcss"
