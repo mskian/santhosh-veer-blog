@@ -31,7 +31,7 @@ jobs:
         working-directory: ./deploy
         run: yarn
       - name: 'Deploy Ghost Theme'
-        run: node deploy/index.js && rm -rf santhoshveer.zip
+        run: node deploy/index.js
         env:
           url: ${{ secrets.GHOST_ADMIN_API_URL }}
           key: ${{ secrets.GHOST_ADMIN_API_KEY }}
