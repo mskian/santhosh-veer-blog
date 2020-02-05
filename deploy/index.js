@@ -1,5 +1,5 @@
-const GhostAdminApi = require('@tryghost/admin-api');
 require('dotenv').config()
+const GhostAdminApi = require('@tryghost/admin-api');
 
 (async function main() {
   try {
