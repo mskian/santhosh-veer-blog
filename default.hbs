@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-title" content="San Blog">
 
     {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/bulma.min.css"}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/style.css"}}" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
@@ -69,10 +69,18 @@
 
 {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="{{asset "js/custom.js"}}"></script>
-
 <script src="{{asset "js/register.js"}}"></script>
 <script>
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#' + burger.dataset.target);
+
+  burger.addEventListener('click', function() {
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+  });
+})();
+
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -82,6 +90,7 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
 var action = getParameterByName('action');
 $(document).ready(function() {
     if (action == 'signup') {
