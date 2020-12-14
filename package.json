@@ -54,7 +54,7 @@
 		}
 	},
 	"devDependencies": {
-		"autoprefixer": "^10.0.4",
+		"autoprefixer": "^10.1.0",
 		"beeper": "^2.0.0",
 		"cssnano": "^4.1.10",
 		"gscan": "^3.6.0",
