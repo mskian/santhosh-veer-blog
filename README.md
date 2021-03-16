@@ -4,7 +4,7 @@
 
 A Simple and Responsive Ghost Blog theme.
 
-- Ghost v3 - <https://ghost.org/3/>
+- Ghost V4
 - Ghost theme with Membership Feature - <https://ghost.org/members/>
 - Ghost theme for My Personal Blog - Automatically deploy to Ghost Admin Dasboard
 
