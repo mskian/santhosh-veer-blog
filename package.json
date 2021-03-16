@@ -2,10 +2,10 @@
 	"name": "santhoshveer",
 	"description": "Light weight and Responsive Ghost theme.",
 	"demo": "https://santhoshveer.com",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
-		"ghost-api": "v3",
-		"ghost": ">=3.0.0"
+		"ghost-api": "v4",
+		"ghost": ">=4.0.0"
 	},
 	"scripts": {
 		"dev": "gulp",
