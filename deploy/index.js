@@ -6,7 +6,7 @@ const GhostAdminApi = require('@tryghost/admin-api');
     const api = new GhostAdminApi({
       url: process.env.url,
       key: process.env.key,
-      version: 'v3'
+      version: 'v4'
     });
 
     await api.themes.upload({file: '../dist/santhoshveer.zip'});

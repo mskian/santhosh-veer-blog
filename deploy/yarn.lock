@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@tryghost/admin-api@^1.3.7":
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/@tryghost/admin-api/-/admin-api-1.3.7.tgz#522e514eb5b4e8439d57ec2e22e8e60b50c941b0"
-  integrity sha512-AEcCC0DeeXw/uyRZWX0pZUwnwWFGnnvcJORJ54Xb96uKTUOh2JdbGU9CDB/wF+bhIUAlcAYc8ZwA8imcNZeydw==
+"@tryghost/admin-api@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@tryghost/admin-api/-/admin-api-1.4.0.tgz#e21adf0cfb7ccc9cc846ef26eaf438dfc84b775f"
+  integrity sha512-wI5RUYnlN3CAoVLNvjb95OuKZ9EDVJOXxTPZIFPj818VQlJKe284p7qNPfWaCL9DYTQ01WTkq1mwa35SL9Af/Q==
   dependencies:
     axios "0.21.1"
     form-data "^3.0.0"

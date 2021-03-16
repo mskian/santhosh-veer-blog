@@ -14,7 +14,7 @@
   "author": "Santhosh Veer",
   "license": "MIT",
   "dependencies": {
-    "@tryghost/admin-api": "^1.3.7",
+    "@tryghost/admin-api": "^1.4.0",
     "dotenv": "^8.2.0"
   }
 }
