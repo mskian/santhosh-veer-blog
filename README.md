@@ -17,11 +17,8 @@ A Simple and Responsive Ghost Blog theme.
 - Minimal and Simple Look
 - Social Share Buttons
 - Social Profile Icons
-- user login and Registration form
-- Membership Account Page
 - Cookie Notice - <https://wpspeedmatters.com/fastest-cookie-consent-wordpress-plugin/>
-- Paid Membership (Soon)
-- Many More Features Soon...
+- Ghost Members Portal - <https://ghost.org/help/setting-up-portal/>
 
 ## Development 🛠
 
@@ -57,26 +54,6 @@ yarn test
 ```bash
 ## Bundle the theme to zip for Production use
 yarn zip
-```
-
-- Enable Members Pages - Login to your Ghost Admin Dashboard and Upload this routes file on Lab Section
-
-`routes.yaml`
-
-```yaml
-routes:
-  /signup/: members/signup
-  /signin/: members/signin
-  /account/: members/account
-
-collections:
-  /:
-    permalink: /{slug}/
-    template: index
-
-taxonomies:
-  tag: /tag/{slug}/
-  author: /author/{slug}/
 ```
 
 ## LICENSE 📜

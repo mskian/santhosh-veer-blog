@@ -17,11 +17,11 @@
 {{/foreach}}
 
 {{#if @member}}
-<a class="navbar-item" href="{{@site.url}}/account/"><i class="fas fa-cog"></i> &nbsp; Account</a>
+<a class="navbar-item" href="{{@site.url}}/#/portal/account"><i class="fas fa-cog"></i> &nbsp; Account</a>
 <a class="navbar-item" href="#signout" data-members-signout><i class="fas fa-sign-out-alt"></i> &nbsp; Log out</a>
 {{else}}
-<a class="navbar-item" href="{{@site.url}}/signin/"><i class="fas fa-sign-in-alt"></i> &nbsp; Log in</a>
-<a class="navbar-item" href="{{@site.url}}/signup/"><i class="fas fa-user-plus"></i> &nbsp; Signup</a>
+<a class="navbar-item" href="{{@site.url}}/#/portal/signin"><i class="fas fa-sign-in-alt"></i> &nbsp; Log in</a>
+<a class="navbar-item" href="{{@site.url}}/#/portal/signup"><i class="fas fa-user-plus"></i> &nbsp; Signup</a>
 {{/if}}
 
 </div>
