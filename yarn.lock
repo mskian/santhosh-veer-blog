@@ -138,7 +138,23 @@
     lodash "^4.17.21"
     uuid "^8.3.2"
 
-"@tryghost/logging@1.0.0", "@tryghost/logging@^1.0.0":
+"@tryghost/logging@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@tryghost/logging/-/logging-1.0.1.tgz#26f8dc45f70550efed583244ee79ff7721e4dc58"
+  integrity sha512-e01V4kYlsqKuJsSw3VPWSrGBF2PaZ4NMXhh9jokVksB9EXOgX1DUElHM0nu1vKcewYvQJnMxkPoOSi3SvxeA7w==
+  dependencies:
+    "@tryghost/bunyan-rotating-filestream" "^0.0.7"
+    "@tryghost/elasticsearch" "^1.0.0"
+    "@tryghost/pretty-stream" "^0.1.2"
+    "@tryghost/root-utils" "^0.3.7"
+    bunyan "^1.8.15"
+    bunyan-loggly "^1.4.2"
+    fs-extra "^10.0.0"
+    gelf-stream "^1.1.1"
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.21"
+
+"@tryghost/logging@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@tryghost/logging/-/logging-1.0.0.tgz#c68b06929a3ad84a903fc4f368c2000026ae4f68"
   integrity sha512-0xoVtyf2FMo+ZzQjjVsKjav9d81iNG6zHpHOtHQBu4SDtEbBUPJ3T6xe3+kz3JRM/xZS3jzUZT71Pps1RM3UVg==
@@ -2199,16 +2215,16 @@ graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6,
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
-gscan@^4.10.3:
-  version "4.10.3"
-  resolved "https://registry.yarnpkg.com/gscan/-/gscan-4.10.3.tgz#baaf2025ed64b6d9cece73cc267b5d48a0817a98"
-  integrity sha512-2XlL5aw1Y/C8vzZyLIBenSr5upASd7ubK3l2kl862tMqJ40c9GfBbW5Y1061kaacSLVRcdwqZnM7VmolG1lRtA==
+gscan@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/gscan/-/gscan-4.11.1.tgz#119450c1aa51ac1a8abb607d8c074f84e36129e7"
+  integrity sha512-anWiynkSEh1FW8SmNIuaWuLrPZ/mVm9ylf3dF60vsnCUQVmtCJFOZhvEbINMAk8j2VEqq2zR8cEfz2VWjN004g==
   dependencies:
     "@sentry/node" "6.15.0"
     "@tryghost/config" "0.2.1"
     "@tryghost/debug" "0.1.9"
     "@tryghost/ignition-errors" "0.1.8"
-    "@tryghost/logging" "1.0.0"
+    "@tryghost/logging" "1.0.1"
     "@tryghost/pretty-cli" "1.2.22"
     "@tryghost/server" "0.1.0"
     "@tryghost/zip" "1.1.18"
