@@ -3937,10 +3937,10 @@ postcss-convert-values@^5.1.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
-postcss-custom-properties@^12.1.5:
-  version "12.1.5"
-  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-12.1.5.tgz#e669cfff89b0ea6fc85c45864a32b450cb6b196f"
-  integrity sha512-FHbbB/hRo/7cxLGkc2NS7cDRIDN1oFqQnUKBiyh4b/gwk8DD8udvmRDpUhEK836kB8ggUCieHVOvZDnF9XhI3g==
+postcss-custom-properties@^12.1.7:
+  version "12.1.7"
+  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-12.1.7.tgz#ca470fd4bbac5a87fd868636dafc084bc2a78b41"
+  integrity sha512-N/hYP5gSoFhaqxi2DPCmvto/ZcRDVjE3T1LiAMzc/bg53hvhcHOLpXOHb526LzBBp5ZlAUhkuot/bfpmpgStJg==
   dependencies:
     postcss-value-parser "^4.2.0"
 
