@@ -13,7 +13,7 @@ jobs:
         node: [ '14' ]
     name: Node ${{ matrix.node }}
     steps:
-      - uses: actions/checkout@v3.0.0
+      - uses: actions/checkout@v3.0.1
       - name: Cache node modules
         uses: actions/cache@v3.0.2
         with:
