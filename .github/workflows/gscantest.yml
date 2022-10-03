@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     strategy:
       matrix:
-        node: [ '14' ]
+        node: [ '16' ]
     name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@v3.0.2
@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v3.5.0
         with:
           node-version: ${{ matrix.node }}
-      - run: npm install yarn
       - run: yarn install
       - run: yarn test
       - run: yarn test:ci
