@@ -26,9 +26,6 @@
 			"groupName": "gulp"
 		}
 	],
-	"node": {
-		"supportPolicy": ["lts_active"]
-	},
 	"labels": [
 		"renovate"
 	],
