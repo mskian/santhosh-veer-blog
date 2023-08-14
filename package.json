@@ -2,7 +2,7 @@
 	"name": "santhoshveer",
 	"description": "Light weight and Responsive Ghost theme.",
 	"demo": "https://santhoshveer.com",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"scripts": {
 		"dev": "gulp",
 		"build": "gulp build",

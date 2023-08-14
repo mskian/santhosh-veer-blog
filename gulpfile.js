@@ -5,7 +5,7 @@ const pump = require('pump');
 const livereload = require('gulp-livereload');
 const postcss = require('gulp-postcss');
 const zip = require('gulp-zip');
-const beeper = require('beeper');
+//const beeper = require('beeper');
 const fs = require('fs');
 
 // postcss plugins
