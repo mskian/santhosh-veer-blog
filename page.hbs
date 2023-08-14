@@ -11,7 +11,9 @@
 <div class="columns is-centered">
 <div class="column is-half">
 <article class="{{post_class}}">
+{{#match @page.show_title_and_feature_image}}
 <h1 class="title has-text-weight-bold has-text-centered">{{title}}</h1>
+{{/match}}
 <hr>
 <section class="post-content">
 {{content}}
