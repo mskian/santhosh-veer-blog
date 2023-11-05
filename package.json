@@ -60,7 +60,7 @@
 		"gulp-postcss": "^9.0.1",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-watch": "^5.0.1",
-		"gulp-zip": "^5.1.0",
+		"gulp-zip": "^6.0.0",
 		"postcss": "^8.4.31",
 		"postcss-color-function": "^4.1.0",
 		"postcss-custom-properties": "^13.3.2",
