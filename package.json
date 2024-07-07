@@ -63,7 +63,7 @@
 		"gulp-zip": "^6.0.0",
 		"postcss": "^8.4.39",
 		"postcss-color-function": "^4.1.0",
-		"postcss-custom-properties": "^13.3.11",
+		"postcss-custom-properties": "^13.3.12",
 		"postcss-easy-import": "^4.0.0",
 		"pump": "^3.0.0"
 	},
