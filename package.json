@@ -65,7 +65,7 @@
 		"postcss-color-function": "^4.1.0",
 		"postcss-custom-properties": "^14.0.6",
 		"postcss-easy-import": "^4.0.0",
-		"pump": "^3.0.2"
+		"pump": "^3.0.3"
 	},
 	"browserslist": [
 		"defaults"
