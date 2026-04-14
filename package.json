@@ -51,7 +51,7 @@
 		"card_assets": true
 	},
 	"devDependencies": {
-		"autoprefixer": "^10.4.27",
+		"autoprefixer": "^10.5.0",
 		"beeper": "^3.0.0",
 		"cssnano": "^7.1.5",
 		"gscan": "^4.49.7",
